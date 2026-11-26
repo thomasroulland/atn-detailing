@@ -1,18 +1,20 @@
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Services from './components/Services'
 import Gallery from './components/Gallery'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import AtnHero from '@/components/atn-hero/AtnHero'
+import { ServicesSection, DevisSection } from '@/components/atn-hero/AtnSections'
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <main id="main-content">
-        <Hero />
-        <Services />
+        <AtnHero>
+          <ServicesSection />
+          <DevisSection />
+        </AtnHero>
         <Gallery />
         <Testimonials />
         <Contact />

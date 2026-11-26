@@ -47,6 +47,12 @@ export default function Footer() {
           © 2026 ATN Detailing
         </p>
       </div>
+      <p
+        className="max-w-6xl mx-auto mt-8 text-center sm:text-left"
+        style={{ color: 'var(--muted)', fontSize: '0.7rem', fontWeight: 300 }}
+      >
+        Modèle 3D : « (FREE) Porsche 911 Carrera 4S » par Lionsharp Studios, licence CC BY-SA 4.0, modifié.
+      </p>
     </footer>
   )
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Barlow_Condensed, Space_Grotesk } from 'next/font/google'
+import SmoothScroll from '@/components/atn-hero/SmoothScroll'
 import './globals.css'
 
 const barlow = Barlow_Condensed({
@@ -54,7 +55,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <SmoothScroll />
+        {children}
+      </body>
     </html>
   )
 }
