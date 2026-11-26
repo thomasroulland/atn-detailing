@@ -8,7 +8,7 @@ import styles from './AtnHero.module.css';
 
 // Tout ce qui est WebGL est chargé côté client uniquement
 const HeroScene = dynamic(() => import('./HeroScene'), { ssr: false, loading: () => null });
-const ShaderBackdrop = dynamic(() => import('./ShaderBackdrop'), { ssr: false, loading: () => null });
+const AtnBackdrop = dynamic(() => import('./AtnBackdrop'), { ssr: false, loading: () => null });
 
 type AtnHeroProps = {
   /** Les sections qui suivent le hero. Ajoute data-car-pose="right" | "left" | "bottom" sur une section
@@ -204,7 +204,8 @@ export default function AtnHero({
     >
       {/* calque fixe derrière toute la page : fond, titre, voiture */}
       <div className={styles.layer} aria-hidden>
-        {mobile ? <div className={styles.glow} /> : <ShaderBackdrop />}
+        <div className={styles.glow} />
+        <AtnBackdrop poseRef={poseRef} active={active} />
         {title}
         <HeroScene
           poseRef={poseRef}
