@@ -45,10 +45,10 @@ export const POSES: Record<string, { desktop: Preset; mobile: Preset }> = {
     desktop: { yaw: -205, camDist: 11.8, camY: 0.55, targetY: 1.0, slideX: -1.7 },
     mobile: { yaw: -205, camDist: 13, camY: 0.6, targetY: -0.1, slideX: 0 },
   },
-  // voiture en bas, au centre, sous le texte
+  // voiture en bas, au centre, sous le texte : elle pivote en montrant l'avant et finit tournée de l'autre côté
   bottom: {
-    desktop: { yaw: -165, camDist: 10.4, camY: 0.85, targetY: 1.5, slideX: 0 },
-    mobile: { yaw: -165, camDist: 13, camY: 0.9, targetY: 1.9, slideX: 0 },
+    desktop: { yaw: -15, camDist: 10.4, camY: 0.85, targetY: 1.5, slideX: 0 },
+    mobile: { yaw: -15, camDist: 13, camY: 0.9, targetY: 1.9, slideX: 0 },
   },
 };
 
