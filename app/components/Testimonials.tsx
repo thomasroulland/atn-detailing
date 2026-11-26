@@ -57,7 +57,7 @@ export default function Testimonials() {
           className="flex flex-col items-center text-center gap-4 mb-16"
         >
           <motion.p variants={shouldReduce ? {} : fadeInUp} className="section-eyebrow">
-            Ce qu'ils en disent
+            Ce qu&apos;ils en disent
           </motion.p>
           <motion.h2
             id="testimonials-heading"

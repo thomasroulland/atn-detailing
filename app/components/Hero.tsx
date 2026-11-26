@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider'
 import { fadeInUp, stagger } from '@/lib/motion'

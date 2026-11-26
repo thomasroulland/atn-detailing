@@ -1,7 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
-import Link from 'next/link'
+import { useEffect, useState } from 'react'
 
 function MenuIcon({ open }: { open: boolean }) {
   return (
@@ -31,7 +30,6 @@ const links = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
-  const drawerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
@@ -124,7 +122,7 @@ export default function Navbar() {
       {/* Mobile drawer */}
       <div
         id="mobile-drawer"
-        ref={drawerRef}
+        inert={!open}
         role="dialog"
         aria-label="Menu mobile"
         aria-modal="true"

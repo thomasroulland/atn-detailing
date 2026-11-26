@@ -1,6 +1,4 @@
 export default function Footer() {
-  const year = new Date().getFullYear()
-
   return (
     <footer
       role="contentinfo"
@@ -46,7 +44,7 @@ export default function Footer() {
           className="text-xs"
           style={{ color: 'var(--muted)', fontFamily: 'var(--font-barlow, sans-serif)' }}
         >
-          © {year} ATN Detailing
+          © 2026 ATN Detailing
         </p>
       </div>
     </footer>
